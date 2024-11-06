@@ -12,7 +12,7 @@
 \spacing{1.5}
 \usepackage{titlesec}
 \titleformat*{\section}{\normalsize\bfseries}
-
+\titleformat*{\subsection}{\normalsize\bfseries}
 
 \begin{document}
 
@@ -51,7 +51,17 @@
     \section{Materiales y métodos}
 	
 	% Esto va en la intro?
-    El el desarrollo de la tesis se trabajó en dos sistemas involucrados en las sembradoras: el transporte de semillas desde una tolva central a cada uno de los cuerpos de siembra\footnote{El cuerpo de siembra posee discos que abren el surco, tubos por denode se descarga fertilizante y semillas y, en su parte posterior, ruedas que tapan el surco.} mediante mangueras con flujo de aire forzado y dosificadore de precisión, que son mecanismos que se mantan uno por cuerpo de siembra, poseen una pequeña tolva que les sirve de almacenamiento intermedio de semillas y las va dejando caer de una a la vez, con el fin de que queden equiespaciadas en el surco. Algunas sembradoras pueden contar con ambos sistemas, aunque existen sistemas air-drill que dejan caer las semillas tal como llegan por la manguera (siembra a chorrillo) o sembradoras con dosificadores de precisión que reciben las semillas directamente de tolvas repartidas en toda la sembradora.
+    En el desarrollo de la tesis se trabajó en dos sistemas involucrados en las sembradoras: el transporte de semillas desde una tolva central a cada uno de los cuerpos de siembra\footnote{El cuerpo de siembra posee discos que abren el surco, tubos por denode se descarga fertilizante y semillas y, en su parte posterior, ruedas que tapan el surco.} mediante mangueras con flujo de aire forzado y dosificadore de precisión, que son mecanismos que se mantan uno por cuerpo de siembra, poseen una pequeña tolva que les sirve de almacenamiento intermedio de semillas y las va dejando caer de una a la vez, con el fin de que queden equiespaciadas en el surco. Algunas sembradoras pueden contar con ambos sistemas, aunque existen sistemas air-drill que dejan caer las semillas tal como llegan por la manguera (siembra a chorrillo) o sembradoras con dosificadores de precisión que reciben las semillas directamente de tolvas repartidas en toda la sembradora.
+    
+	\subsection{Evaluación de sistemas de siembra}
+	
+	La norma ISO 7256 posee 2 partes y establece cómo se debe evaluar tanto la dosificación de precisión (parte 1) como la dosificación a chorrillo (parte 2), en función de las distancias entre semillas consecutivas medidas en el surco.
+	
+	La experimentación a campo, haciendo funcionar la sembradora en condiciones normales, resulta costosa, demanda mucho tiempo tanto la ejecución como la obtención de datos y está sujeta a las buenas condiciones climáticas. Si bien son necesarias para el testeo de un prototipo en su etapa final de desarrollo, en etapas previas resulta conveniente que los experimentos se lleven a cabo en bancos de ensayo. Estos dispositivos están siempre en el mismo lugar, por lo que para obtener la separación entre semillas se puede recurrir a una plataforma móvil que simula el movimiento del suelo o directamente estimarse registrando el instante de paso de cada semilla por un lugar y calcularse la distancia teórica suponiendo una velocidad de avance constante. En el desarrollo de la tesis se utiliza la última opción como método de evaluación.
+	por esta razón, una parte del trabajo se enfocó en el desarrollo y evaluación de técnicas de sensado que detectan y registran el instante de paso de cada semilla.	
+	
+	\subsection{Desarrollo de sensores}
+    
     
 	
     experimentos realizados
@@ -70,9 +80,20 @@
 	
 	\section{Para bibliografía}
 	
-	https://www.argentina.gob.ar/inti
+
 	
+    
+    
+    \begin{thebibliography}{8}
+
+	\bibitem{inti-web}
+    https://www.argentina.gob.ar/inti
+
+    \bibitem{programa-maq-agricola-web}
     https://www.argentina.gob.ar/servicios-inti/maquinaria-agricola
+    
+    \bibitem{iso7256} Standard, I. S. O. 7256/1-1984 : ``Sowing equipment-Test methods Part 1: Single seed drills (precision drills)''. Geneva, Switzerland: International Organization for Standardization, 1984
+    \end{thebibliography}
     
 \end{document}
 
