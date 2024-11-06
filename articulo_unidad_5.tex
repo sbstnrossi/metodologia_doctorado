@@ -51,7 +51,7 @@
     \section{Materiales y métodos}
 	
 	% Esto va en la intro?
-    En el desarrollo de la tesis se trabajó en dos sistemas involucrados en las sembradoras: el transporte de semillas desde una tolva central a cada uno de los cuerpos de siembra\footnote{El cuerpo de siembra posee discos que abren el surco, tubos por denode se descarga fertilizante y semillas y, en su parte posterior, ruedas que tapan el surco.} mediante mangueras con flujo de aire forzado y dosificadore de precisión, que son mecanismos que se mantan uno por cuerpo de siembra, poseen una pequeña tolva que les sirve de almacenamiento intermedio de semillas y las va dejando caer de una a la vez, con el fin de que queden equiespaciadas en el surco. Algunas sembradoras pueden contar con ambos sistemas, aunque existen sistemas air-drill que dejan caer las semillas tal como llegan por la manguera (siembra a chorrillo) o sembradoras con dosificadores de precisión que reciben las semillas directamente de tolvas repartidas en toda la sembradora.
+    En el desarrollo de la tesis se trabajó en dos sistemas involucrados en las sembradoras: el transporte de semillas desde una tolva central a cada uno de los cuerpos de siembra\footnote{El cuerpo de siembra posee discos que abren el surco, tubos por donde se descarga fertilizante y semillas y, en su parte posterior, ruedas que tapan el surco.} mediante mangueras con flujo de aire forzado y dosificadores de precisión, que son mecanismos que se montan uno por cuerpo de siembra, poseen una pequeña tolva que les sirve de almacenamiento intermedio de semillas y las va dejando caer de una a la vez, con el fin de que queden equiespaciadas en el surco. Algunas sembradoras pueden contar con ambos sistemas, aunque existen sistemas air-drill que dejan caer las semillas tal como llegan por la manguera (siembra a chorrillo) o sembradoras con dosificadores de precisión que reciben las semillas directamente de tolvas repartidas en toda la sembradora.
     
 	\subsection{Evaluación de sistemas de siembra}
 	
@@ -62,7 +62,13 @@
 	
 	\subsection{Desarrollo de sensores}
     
+    El primer sensor estudiado fue el de placa de impacto con transductor piezoeléctrico. Las primeras pruebas exploratorias se hicieron con placas de fibra de densidad media (MDF) con melamina en ambas caras y un micrófono piezoeléctrico tipo disco de 20 mm de diámetro adherido con cinta bifaz. La adquisición de datos se hizo simplemente grabando audio con una computadora para registrar la señal eléctrica del sensor. Con estas señales se comenzó a programar el método para detectar el tiempo de impacto de cada semilla.
     
+    Para la mejora de este sensor se llevaron a cabo pruebas exploratorias con diferentes materiales empleados como placa de impacto y otros como amortiguantes de las vibraciones. Con los resultados obtenidos se escogieron 3 combinaciones de material de placa y amortiguante y se realizó un experimento aleatorizado. 
+    
+    En una etapa posterior, se comenzó a trabajar en la detección por barrera óptica. Su construcción se basó técnicas encontradas en la literatura. Utilizando un arreglo lineal de fototransistores se puede obtener tanto información temporal como espacial, útil para conocer la deriva del ángulo con la que salen las semillas de un dosificador o de un tubo de descarga.
+	
+	Actualmente, se está trabajando en una barrera óptica con doble arreglo lineal de sensores ópticos, a 90° en un mismo plano. Con esta configuración se puede conocer las coordenadas ``X Y'' por donde cada semilla atraviesa el sensor.
 	
     experimentos realizados
     equipamiento utilizado
