@@ -32,13 +32,13 @@
     
     El Instituto Nacional de Tecnología Industrial (INTI) \cite{inti-web} ofrece servicios de asistencia técnica a la industria argentina. Desde 2014 se formó el equipo de trabajo que hoy se desempeña en el Departamento de Ingeniería de Productos Industriales (DIPI) de la sede INTI Rosario. La demanda de empresas del sector de fabricantes de maquinaria agrícola dio lugar al desarrollo de capacidades internas para la experimentación y evaluación de partes y mecanismos de los productos que fabrican. 
     
-    Las dificultades para importar dispositivos y accesorios, la falta de información, hojas de datos y/o manuales y el crecimiento de las empresas, en particular sus departamentos de ingeniería son algunas de las razones por las que los fabricantes empezaron a desarrollar sus propios productos.
+    Las restricciones en la importación de dispositivos tecnológicos, que limitan el acceso a insumos críticos, la escasez de información técnica sobre partes fabricadas por terceros y el crecimiento de las empresas y expansión de sus departamentos de ingeniería, son algunas de las razones por las que los fabricantes empezaron a desarrollar sus propias partes y componentes tecnológicos.
     
-    En 2023 se formalizó a través de una disposición del instituto el Programa de Maquinaria Agrícola \cite{programa-maq-agricola-web}. Este programa busca promover la vinculación entre el sistema científico y el sector industrial, mediante la conformación de un consejo asesor y la creación de un observatorio sobre maquinaria agrícola.
+    En 2023 se formalizó a través de una disposición del INTI el Programa de Maquinaria Agrícola \cite{programa-maq-agricola-web}. Este programa  tiene como objetivo fortalecer la articulación entre instituciones del sistema científico y empresas del sector industrial, mediante la conformación de un consejo asesor y la creación de un observatorio sobre maquinaria agrícola.
     
     El INTI cuenta con un plan de capacitación de sus agentes, contemplando la realización de carreras de posgrado. La carrera de Doctorado en Ingeniería del agente Sebastián Rossi está aprobada por la gerencia de recursos humanos de la institución.
     
-    Previo a la formación del DIPI, Gastón Bourges trabajó en modelado y simulación de sistemas de distribución de semillas por aire, llamados air-drill, y luego de incorporarse al INTI en 2013 completó su tresis doctoral. Los trabajos de investigación que quedaron planteados, principalmente en el campo experimental, y las necesidades de desarrollar sistemas de medición y evaluación para sistemas de siembra dentro del INTI, llevaron al agente Sebastián Rossi a iniciar su proyecto de tesis doctoral.
+    Previo a la formación del DIPI, Gastón Bourges trabajó en modelado y simulación de sistemas de distribución de semillas por aire, llamados air-drill, y luego de incorporarse al INTI en 2013 completó su tesis doctoral. Los trabajos de investigación que quedaron planteados, principalmente en el campo experimental, y las necesidades de desarrollar sistemas de medición y evaluación para sistemas de siembra para que el INTI brinde el servicio, sirvieron de base al agente Sebastián Rossi para iniciar su proyecto de tesis doctoral.
     
     En 2017 comenzó a realizar cursos acreditables como materias de doctorados. En 2019 presento el plan de tesis y luego, en 2020 fue admitido por la escuela de posgrado de la Facultad de Ciencias Exactas, Ingeniería y Agrimensura de la Universidad Nacional de Rosario como alumno de doctorado.
     
@@ -50,7 +50,7 @@
     
     \section{Materiales y métodos}
 	
-	% Esto va en la intro?
+	% Esto va en la intro? separar la primer oracion
     En el desarrollo de la tesis se trabajó en dos sistemas involucrados en las sembradoras: el transporte de semillas desde una tolva central a cada uno de los cuerpos de siembra\footnote{El cuerpo de siembra posee discos que abren el surco, tubos por donde se descarga fertilizante y semillas y, en su parte posterior, ruedas que tapan el surco.} mediante mangueras con flujo de aire forzado y dosificadores de precisión, que son mecanismos que se montan uno por cuerpo de siembra, poseen una pequeña tolva que les sirve de almacenamiento intermedio de semillas y las va dejando caer de una a la vez, con el fin de que queden equiespaciadas en el surco. Algunas sembradoras pueden contar con ambos sistemas, aunque existen sistemas air-drill que dejan caer las semillas tal como llegan por la manguera (siembra a chorrillo) o sembradoras con dosificadores de precisión que reciben las semillas directamente de tolvas repartidas en toda la sembradora.
     
 	\subsection{Evaluación de sistemas de siembra}
@@ -58,7 +58,7 @@
 	La norma ISO 7256 posee 2 partes y establece cómo se debe evaluar tanto la dosificación de precisión (parte 1) como la dosificación a chorrillo (parte 2), en función de las distancias entre semillas consecutivas medidas en el surco.
 	
 	La experimentación a campo, haciendo funcionar la sembradora en condiciones normales, resulta costosa, demanda mucho tiempo tanto la ejecución como la obtención de datos y está sujeta a las buenas condiciones climáticas. Si bien son necesarias para el testeo de un prototipo en su etapa final de desarrollo, en etapas previas resulta conveniente que los experimentos se lleven a cabo en bancos de ensayo. Estos dispositivos están siempre en el mismo lugar, por lo que para obtener la separación entre semillas se puede recurrir a una plataforma móvil que simula el movimiento del suelo o directamente estimarse registrando el instante de paso de cada semilla por un lugar y calcularse la distancia teórica suponiendo una velocidad de avance constante. En el desarrollo de la tesis se utiliza la última opción como método de evaluación.
-	por esta razón, una parte del trabajo se enfocó en el desarrollo y evaluación de técnicas de sensado que detectan y registran el instante de paso de cada semilla.	
+	Por esta razón, una parte del trabajo se enfocó en el desarrollo y evaluación de técnicas de sensado que detectan y registran el instante de paso de cada semilla.	
 	
 	\subsection{Desarrollo de sensores}
     
@@ -66,7 +66,7 @@
     
     Para la mejora de este sensor se llevaron a cabo pruebas exploratorias con diferentes materiales empleados como placa de impacto y otros como amortiguantes de las vibraciones. Con los resultados obtenidos se escogieron 3 combinaciones de material de placa y amortiguante y se realizó un experimento aleatorizado. 
     
-    En una etapa posterior, se comenzó a trabajar en la detección por barrera óptica. Su construcción se basó técnicas encontradas en la literatura. Utilizando un arreglo lineal de fototransistores se puede obtener tanto información temporal como espacial, útil para conocer la deriva del ángulo con la que salen las semillas de un dosificador o de un tubo de descarga.
+    En una etapa posterior, se comenzó a trabajar en la detección por barrera óptica. Su construcción se basó en técnicas encontradas en la literatura. Utilizando un arreglo lineal de fototransistores se puede obtener tanto información temporal como espacial, útil para conocer la deriva del ángulo con la que salen las semillas de un dosificador o de un tubo de descarga.
 	
 	Actualmente, se está trabajando en la evaluación de desempeño de una barrera óptica con doble arreglo lineal de sensores ópticos, a 90° en un mismo plano. Con esta configuración se puede conocer las coordenadas ``X Y'' por donde cada semilla atraviesa el sensor.
 	
