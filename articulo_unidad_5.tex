@@ -71,32 +71,34 @@
 	Actualmente, se está trabajando en la evaluación de desempeño de una barrera óptica con doble arreglo lineal de sensores ópticos, a 90° en un mismo plano. Con esta configuración se puede conocer las coordenadas ``X Y'' por donde cada semilla atraviesa el sensor.
 	
 	\subsection{Experimentos realizados}
-	En 2017 y 2019 se realizaron dos experimentos en bloques aleatorizados para evaluar los factores que influyen en la distribución de semillas en un cabezal distribuidor de 6 salidas. En estos cabezales se espera que salga el mismo flujo de semilas en cada salida, que se cumple en buena medida con semillas pequeñas pero se encuentran diferentes proporciones en semillas de tamaño mayor, como es el caso de la soja.
+	En 2017 y 2019 se realizaron dos experimentos en bloques aleatorizados para evaluar los factores que influyen en la distribución de semillas en un cabezal distribuidor de 6 salidas. El fin de estos cabezales es distribuir en forma equitativa el flujo de semillas que le llega entre todas sus salidas. Esta distribución equitativa se cumple en buena medida con semillas pequeñas, pero se encuentran diferentes proporciones de flujos de salida en semillas de tamaño mayor, como es el caso de la soja. 
 	
-	- evaluación de detección por placa
-	- evaluación de detección por arreglo infrarojo    
+	En 2022 se realizó un experimento con semillas de maíz, soja y girasol para evaluar el desempeño de un sistema de detección de semillas por impacto. Cada ensayo se filmó con cámara de alta velocidad en la zona de sensado. A partir de la inspección de los videos, se hizo un registro manual de cada semilla. Los resultados de detección se contrastaron con registros manuales para contabilizar los falsos positivos y falsos negativos.
+	
+	En 2023 se realizó un experimento para evaluar un sensor de barrera óptica en 1 dimensión. 
+	
+	Luego, En 2025 se realizó un experimento para evaluar un sensor de barrera óptica en 2 dimensiones. El proceso de validación se hizo de manera similar al del sensor por placa de impacto, aunque para el arreglo en 2 dimensiones se agregó un espejo para filmar desde 2 ángulos al mismo tiempo.
     
     
-    equipamiento utilizado
-    - placas con piezo
-    - pares de emisor - receptor infrarojo
-    - placa de sonido de computadora
-    - adquisidor de datos HBM
-    - placa de desarrollo con ESP32
-    - Cámara de alta velocidad Fastec
+    \subsection{Equipamiento utilizado}
+    Los dispositivos utilizados para detectar semillas son, por un lado, los que están bajo evaluación: sensor piezoeléctrico y par de LED y fototransistor infrarojos, y por otro lado el utilizado como patrón: la cámara de alta velocidad Fastec TS5-S. Para la adquisición de datos se utilizaron las placas de sonido de computadora (integradas y externas USB), un adquisidor de datos HBM QuantumX MX1516B y adaptadores de tarjeta micro SD. Para procesamiento en tiempo real de las señales de sensores se utilizaron placas de desarrollo con microcontrolador ESP32. 
     
-    herramientas para análisis de datos    
-    - python con los paquetes numpy y Pandas
-    - R
+    Para procesar señales y analizar los datos se utilizó python con las bibliotecas numpy, pandas y scipy, y R en el entorno RStudio.
     
     
     
     
     \section{Resultados y discusiones}
     
-    Comentarios sobre resultados
+    La evaluación del sistema de sensado de semillas con placa mostró resultados positivos. Los errores de detección para semillas dosificadas a velocidades bajas se mantuvieron debajo del 1\%. Para semillas de soja a alta velocidad se acercó al 5\%. Su desempeño permite obtener resultados representativos del comportamiento de un dosificador de precisión. El bajo costo de los materiales y su directa conexión a la entrada de audio de una computadora hace que cualquiera pueda usarlo tanto para desarrollo de un nuevo dosificador como para puesta a punto previo a una jornada de siembra.
+    
+    El sistema de arreglo de sensores ópticos requiere de un circuito electrónico de alimentación y adaptación de las señales y de un microcontrolador para procesar los cambios de estado de los sensores. Si bien esto agrega una complejidad respecto a la placa de impacto, todos los componentes empleados son de bajo costo. Los errores de detección son inferiores en el caso de soja a alta velocidad respecto a la placa de impacto y como ventaja se agrega la información espacial, es decir, por dónde pasa cada semilla en el plano de sensado.
+    
+    Ambos sistemas de sensado se encuentran en una etapa de prototipo. Se deberá trabajar en diseño electrónico para mejorar inmunidad al ruido, en diseño de carcasas para que puedan utilizarse en un ambiente fuera del laboratorio. Otro trabajo pendiente es la transferencia formal de estos conocimiento al sector industrial. En 2023 se proyectó hacer la transferencia del sensado de placa a la empresa Siembra Neumática, adaptándolo a sus bancos de pruebas. Este trabajo se iba a realizar en un proyecto con financiación y se dio de baja antes de que comience.
+    
+    El sistema de sensado por placa de impacto se utilizó para contabilizar las semillas por cada salida del cabezal distribuidor en los experimentos realizados en el sistema air-drill. En este trabajo se encontró que uno de los factores que más influyen en la distribución es la longitud relativa entre las mangueras de salida. Se planea hacer un nuevo experimento para indagar con mayor profundidad el efecto de las características geométricas de las mangueras de salida sobre las proporciones de semillas por cada una de ellas.
+
     publicaciones hechas
-    trabajos planificados
     
     
 	\section{Conclusiones}
