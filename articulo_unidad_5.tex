@@ -14,6 +14,12 @@
 \titleformat*{\section}{\normalsize\bfseries}
 \titleformat*{\subsection}{\normalsize\bfseries}
 
+\usepackage{url}
+\usepackage{biblatex}
+%\bibliographystyle{plain} % Or another style like unsrt, abbrv, alpha
+
+\bibliography{articulo\_unidad\_5}
+
 \begin{document}
 
     \textbf{AVANCES DE INVESTIGACIÓN DE LA TESIS}
@@ -30,11 +36,11 @@
         
     \section{Introducción}
     
-    El Instituto Nacional de Tecnología Industrial (INTI) \cite{inti-web} ofrece servicios de asistencia técnica a la industria argentina. Desde 2014 se formó el equipo de trabajo que hoy se desempeña en el Departamento de Ingeniería de Productos Industriales (DIPI) de la sede INTI Rosario. La demanda de empresas del sector de fabricantes de maquinaria agrícola dio lugar al desarrollo de capacidades internas para la experimentación y evaluación de partes y mecanismos de los productos que fabrican. 
+    El Instituto Nacional de Tecnología Industrial (INTI) \cite{intiWeb} ofrece servicios de asistencia técnica a la industria argentina. Desde 2014 se formó el equipo de trabajo que hoy se desempeña en el Departamento de Ingeniería de Productos Industriales (DIPI) de la sede INTI Rosario. La demanda de empresas del sector de fabricantes de maquinaria agrícola dio lugar al desarrollo de capacidades internas para la experimentación y evaluación de partes y mecanismos de los productos que fabrican. 
     
     Las restricciones en la importación de dispositivos tecnológicos, que limitan el acceso a insumos críticos, la escasez de información técnica sobre partes fabricadas por terceros y el crecimiento de las empresas y expansión de sus departamentos de ingeniería, son algunas de las razones por las que los fabricantes empezaron a desarrollar sus propias partes y componentes tecnológicos.
     
-    En 2023 se formalizó a través de una disposición del INTI el Programa de Maquinaria Agrícola \cite{programa-maq-agricola-web}. Este programa  tiene como objetivo fortalecer la articulación entre instituciones del sistema científico y empresas del sector industrial, mediante la conformación de un consejo asesor y la creación de un observatorio sobre maquinaria agrícola.
+    En 2023 se formalizó a través de una disposición del INTI el Programa de Maquinaria Agrícola \cite{progMaqAgr}. Este programa  tiene como objetivo fortalecer la articulación entre instituciones del sistema científico y empresas del sector industrial, mediante la conformación de un consejo asesor y la creación de un observatorio sobre maquinaria agrícola.
     
     El INTI cuenta con un plan de capacitación de sus agentes, contemplando la realización de carreras de posgrado. La carrera de Doctorado en Ingeniería del agente Sebastián Rossi está aprobada por la gerencia de recursos humanos de la institución.
     
@@ -55,7 +61,7 @@
     
 	\subsection{Evaluación de sistemas de siembra}
 	
-	La norma ISO 7256 posee 2 partes y establece cómo se debe evaluar tanto la dosificación de precisión (parte 1) como la dosificación a chorrillo (parte 2), en función de las distancias entre semillas consecutivas medidas en el surco.
+	La norma ISO 7256 \cite{ISO7256} posee 2 partes y establece cómo se debe evaluar tanto la dosificación de precisión (parte 1) como la dosificación a chorrillo (parte 2), en función de las distancias entre semillas consecutivas medidas en el surco.
 	
 	La experimentación a campo, haciendo funcionar la sembradora en condiciones normales, resulta costosa, demanda mucho tiempo tanto la ejecución como la obtención de datos y está sujeta a las buenas condiciones climáticas. Si bien son necesarias para el testeo de un prototipo en su etapa final de desarrollo, en etapas previas resulta conveniente que los experimentos se lleven a cabo en bancos de ensayo. Estos dispositivos están siempre en el mismo lugar, por lo que para obtener la separación entre semillas se puede recurrir a una plataforma móvil que simula el movimiento del suelo o directamente estimarse registrando el instante de paso de cada semilla por un lugar y calcularse la distancia teórica suponiendo una velocidad de avance constante. En el desarrollo de la tesis se utiliza la última opción como método de evaluación.
 	Por esta razón, una parte del trabajo se enfocó en el desarrollo y evaluación de técnicas de sensado que detectan y registran el instante de paso de cada semilla.	
@@ -103,23 +109,8 @@
     
 	\section{Conclusiones}
 	
-	\section{Para bibliografía}
 	
 
-	
-    
-    
-    \begin{thebibliography}{8}
-
-	\bibitem{inti-web}
-    https://www.argentina.gob.ar/inti
-
-    \bibitem{programa-maq-agricola-web}
-    https://www.argentina.gob.ar/servicios-inti/maquinaria-agricola
-    
-    \bibitem{iso7256} Standard, I. S. O. 7256/1-1984 : ``Sowing equipment-Test methods Part 1: Single seed drills (precision drills)''. Geneva, Switzerland: International Organization for Standardization, 1984
-    \end{thebibliography}
-    
 \end{document}
 
 
